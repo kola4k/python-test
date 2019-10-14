@@ -43,8 +43,5 @@ for w, c in counts.items():
 
     scores[w] = score
 
-i = 0
-for w, score in sorted(scores.items(), key=lambda t: -t[1]):
-    # if i < 10:
+for w, score in sorted(scores.items(), key=lambda t: -t[1])[:10]:
     print("[score:" + str(score) + "]", w)
-    i += 1
